@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         Log.i("Benchmark", "Benchmark results for $BENCHMARK_ITERATIONS iterations:")
-        Log.i("Benchmark", "Average visitor time taken: ${totalVisitorTimeTaken / BENCHMARK_ITERATIONS}")
-        Log.i("Benchmark", "Average type check time taken ${totalTypeCheckTimeTaken / BENCHMARK_ITERATIONS}")
+        Log.i("Benchmark", "Average visitor time taken: ${totalVisitorTimeTaken / BENCHMARK_ITERATIONS}ms.")
+        Log.i("Benchmark", "Average type check time taken ${totalTypeCheckTimeTaken / BENCHMARK_ITERATIONS}ms.")
     }
 
     private fun determineTypesUsingTypeCheck(dataSet: List<ChatItem>) {
